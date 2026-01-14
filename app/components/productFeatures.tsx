@@ -1,16 +1,54 @@
+"use client"
 import Image from "next/image"
 import {ChevronRight} from "lucide-react"
+import { motion } from "framer-motion"
 
 const ProductFeatures = () => {
     return (
-        <div className={`h-[1494px] w-full px-[20px] md:px-[50px] lg:px-[100px] flex flex-col gap-y-[50px]`}>
-            <div className={`h-[228px] w-full flex flex-col items-center gap-y-[14px] leading-[1.1] tracking-tight text-[16px]`}>
+        <div className={`min-h-[1494px] w-full px-[20px] md:px-[50px] lg:px-[100px] flex flex-col gap-y-[50px]`}>
+            <motion.div
+                initial={{
+                    opacity: 0,
+                    filter: "blur(10px)",
+                    y: 20
+                }}
+                whileInView={{
+                    opacity: 1,
+                    filter: "blur(0px)",
+                    y: 0
+                }}
+                transition={{
+                    duration: 0.8,
+                    ease: "easeIn"
+                }}
+                viewport={{
+                    once: true
+                }}
+                className={`h-[228px] w-full flex flex-col items-center gap-y-[14px] leading-[1.1] tracking-tight text-[16px]`}>
                 <div className={"text-[#2476FF]"}>Product Features</div>
                 <div className={`font-inter text-[36px] md:text-[52px] font-semibold text-center`}>All-in-One AI<br/>Marketing Platform</div>
                 <div className={`text-center text-[#52555B]`}>From research to reporting Uplane automates your entire performance marketing workflow,<br/> so you can move faster, create smarter, and scale effortlessly.</div>
-            </div>
+            </motion.div>
 
-            <div className={`w-full h-[1216px] flex flex-col gap-y-[60px]`}>
+            <motion.div
+                initial={{
+                    opacity: 0,
+                    filter: "blur(10px)",
+                    y: 20
+                }}
+                whileInView={{
+                    opacity: 1,
+                    filter: "blur(0px)",
+                    y: 0
+                }}
+                transition={{
+                    duration: 0.5,
+                    ease: "easeIn"
+                }}
+                viewport={{
+                    once: true
+                }}
+                className={`w-full min-h-[1216px] flex flex-col  gap-y-[60px]`}>
                 <Image
                     src="/img_1.png"
                     alt=""
@@ -19,8 +57,26 @@ const ProductFeatures = () => {
                     className="self-center w-full md:w-[786px] h-auto hidden md:block"
                 />
 
-                <div className={`w-full flex-1 flex flex-col gap-y-[20px] md:flex-row md:gap-y-0 md:gap-x-[20px]`}>
-                    <div className={`w-full md:w-[610px] h-[564px] p-[1px] bg-white border border-dashed border-[#e6e6e6]`}>
+                <motion.div
+                    initial={{
+                        opacity: 0,
+                        filter: "blur(10px)",
+                        y: 20
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                        filter: "blur(0px)",
+                        y: 0
+                    }}
+                    transition={{
+                        duration: 0.5,
+                        ease: "easeIn"
+                    }}
+                    viewport={{
+                        once: true
+                    }}
+                    className={`self-center flex-1 flex flex-col gap-y-[20px] md:flex-row md:gap-y-0 md:gap-x-[20px]`}>
+                    <div className={`w-full md:w-1/2 h-[564px] p-[1px] bg-white border border-dashed border-[#e6e6e6]`}>
                         <div className={`h-full w-full bg-[#f0f0f0] flex flex-col pt-1.5 md:pt-2`}>
                             <div className={`relative w-full h-[378px]`}>
                                 <Image
@@ -40,7 +96,8 @@ const ProductFeatures = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={`w-full md:w-[610px] h-[564px] p-[1px] bg-white border border-dashed border-[#e6e6e6]`}>
+
+                    <div className={`w-full md:w-1/2 h-[564px] p-[1px] bg-white border border-dashed border-[#e6e6e6]`}>
                         <div className={`h-full w-full bg-[#f0f0f0] flex flex-col pt-2`}>
                             <div className={`relative w-full h-[378px]`}>
                                 <Image
@@ -60,8 +117,52 @@ const ProductFeatures = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </motion.div>
+
+                <motion.div
+                    initial={{
+                        opacity: 0,
+                        filter: "blur(10px)",
+                        y: 20
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                        filter: "blur(0px)",
+                        y: 0
+                    }}
+                    transition={{
+                        duration: 0.5,
+                        ease: "easeIn"
+                    }}
+                    viewport={{
+                        once: true
+                    }}
+                    className={`w-full h-[477px] p-[1px]  border border-dashed border-[#e6e6e6]`}>
+                    <div className={`h-full w-full bg-[#f0f0f0] flex`}>
+                        <div className={`w-full md:w-1/2 h-full p-[60px] flex flex-col gap-y-[40px] items-center justify-center`}>
+                            <div className={`flex flex-col gap-y-[14px] leading-[1.2] tracking-tight`}>
+                                <div className={`text-[14px] text-[#2476FF]`}>Chat Interface</div>
+                                <div className={`font-inter md:font-semibold text-[24px] font-medium md:text-[48px]`}>Bring Your Marketing Everywhere</div>
+                                <div className={`font-sans text-[16px] text-[#52555B]`}>Uplane is available everywhere, take control, drop ideas, ask for insights 24/7</div>
+                            </div>
+                            <div className={`h-[52px] w-full flex gap-x-[10px]`}>
+                                <div className={`w-[111px] h-full bg-white shadow-[0_6px_16px_rgba(0,0,0,0.08)] rounded-lg`}></div>
+                                <div className={`w-[111px] h-full bg-white shadow-[0_6px_16px_rgba(0,0,0,0.08)] rounded-lg`}></div>
+                                <div className={`w-[111px] h-full bg-white shadow-[0_6px_16px_rgba(0,0,0,0.08)] rounded-lg`}></div>
+                            </div>
+                        </div>
+
+                        <div className={`hidden relative w-1/2 h-full p-2  md:flex items-center justify-center`}>
+                            <div className={`w-full h-full rounded-2xl bg-white p-1`}>
+                                <div className={`h-full w-full bg-[#e8f1fe] rounded-xl`}>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </motion.div>
+            </motion.div>
         </div>
     )
 }
