@@ -147,7 +147,8 @@ const HeroSection = () => {
                     src="/heroImage.png"
                     alt=""
                     fill
-                    className="w-full h-auto object-center"
+                    priority
+                    className="object-contain"
                 />
             </div>
         </div>
