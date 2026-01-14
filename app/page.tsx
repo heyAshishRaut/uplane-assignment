@@ -7,6 +7,7 @@ import { PrimaryButton } from "@/app/components/ui/button"
 
 import Test from "@/app/components/testimonials"
 import Founder from "@/app/components/founder";
+import ProductFeatures from "@/app/components/productFeatures";
 
 export default function Home() {
     return (
@@ -31,6 +32,8 @@ export default function Home() {
                     className="z-50 w-full object-cover"
                 />
             </div>
+
+            <ProductFeatures/>
 
             {/* Wall of Love */}
             <div className={`w-full h-[510px] flex flex-col gap-y-[60px] items-center`}>

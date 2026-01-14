@@ -48,3 +48,9 @@ body {
     animation-direction: reverse;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+

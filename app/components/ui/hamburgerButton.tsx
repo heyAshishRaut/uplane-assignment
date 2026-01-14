@@ -26,13 +26,13 @@ export default function HamburgerButton() {
                                 ease: "easeIn",
                                 duration: 0.2
                             }}
-                            className={`p-3 text-black absolute top-[65px] rounded-xl flex items-center flex-col gap-y-3 cursor-default shadow-[0_8px_24px_rgba(0,0,0,0.12)] right-0 w-[220px] bg-white`}>
-                            <div>Home</div>
+                            className={`p-3 text-black absolute top-[65px] rounded-xl flex items-start flex-col gap-y-3 cursor-default shadow-[0_8px_24px_rgba(0,0,0,0.12)] right-0 w-[220px] bg-white`}>
+                            <div className={``}>Home</div>
                             <div>Product</div>
                             <div>Why Uplane</div>
                             <div>About us</div>
                             <div>Blogs</div>
-                            <div>Careers</div>
+                            <div className={``}>Careers</div>
                             <SecondaryButton text={"Login"} />
                             <PrimaryButton text={"Get Started"} />
                         </motion.div>

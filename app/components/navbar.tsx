@@ -34,7 +34,7 @@ const lists = [
 const Navbar = () => {
     return (
         <div className={`w-full `}>
-            <div className={cn("w-full px-[20px] md:px-[50px] lg:px-[100px] h-[89px] flex items-center justify-between  py-[20px] border-b border-[#e6e6e6]")}>
+            <div className={cn("w-full px-[20px] md:px-[50px] lg:px-[100px] h-[89px] flex items-center justify-between py-[20px] border-b border-[#e6e6e6]")}>
                 <div className={`flex gap-x-[30px] items-center`}>
                     <Image src={uplanelogo} alt={" "} />
                     <div className={cn("hidden lg:flex items-center text-black font-sans text-[16px]")}>
