@@ -139,16 +139,16 @@ const ProductFeatures = () => {
                     }}
                     className={`w-full h-[477px] p-[1px]  border border-dashed border-[#e6e6e6]`}>
                     <div className={`h-full w-full bg-[#f0f0f0] flex`}>
-                        <div className={`w-full md:w-1/2 h-full p-[60px] flex flex-col gap-y-[40px] items-center justify-center`}>
+                        <div className={`w-full md:w-1/2 h-full p-[30px] md:p-[60px] flex flex-col gap-y-[40px] items-center justify-center`}>
                             <div className={`flex flex-col gap-y-[14px] leading-[1.2] tracking-tight`}>
                                 <div className={`text-[14px] text-[#2476FF]`}>Chat Interface</div>
-                                <div className={`font-inter md:font-semibold text-[24px] font-medium md:text-[48px]`}>Bring Your Marketing Everywhere</div>
+                                <div className={`font-inter md:font-semibold text-[28px] font-medium md:text-[48px]`}>Bring Your Marketing Everywhere</div>
                                 <div className={`font-sans text-[16px] text-[#52555B]`}>Uplane is available everywhere, take control, drop ideas, ask for insights 24/7</div>
                             </div>
-                            <div className={`h-[52px] w-full flex gap-x-[10px]`}>
-                                <div className={`w-[111px] h-full bg-white shadow-[0_6px_16px_rgba(0,0,0,0.08)] rounded-lg`}></div>
-                                <div className={`w-[111px] h-full bg-white shadow-[0_6px_16px_rgba(0,0,0,0.08)] rounded-lg`}></div>
-                                <div className={`w-[111px] h-full bg-white shadow-[0_6px_16px_rgba(0,0,0,0.08)] rounded-lg`}></div>
+                            <div className={`h-[52px] w-full flex justify-center gap-x-[10px]`}>
+                                <div className={`w-1/3 md:w-[111px] h-full bg-white shadow-[0_6px_16px_rgba(0,0,0,0.08)] rounded-lg`}></div>
+                                <div className={`w-1/3 md:w-[111px] h-full bg-white shadow-[0_6px_16px_rgba(0,0,0,0.08)] rounded-lg`}></div>
+                                <div className={`w-1/3 md:w-[111px] h-full bg-white shadow-[0_6px_16px_rgba(0,0,0,0.08)] rounded-lg`}></div>
                             </div>
                         </div>
 
