@@ -1,6 +1,8 @@
+"use client"
 import uplanelogo from "@/public/uplaneLogo.png"
 import Image from "next/image"
 import {PrimaryButton} from "@/app/components/ui/button"
+import { motion } from "framer-motion"
 
 const social = [
     {
@@ -131,14 +133,30 @@ const Footer = () => {
                 </div>
             </div>
 
-            <Image
-                src="/footer.png"
-                alt=""
-                width={1920}
-                height={120}
-                priority
-                className="w-full object-cover"
-            />
+            <motion.div
+                initial={{
+                    opacity: 0,
+                    filter: "blur(10px)"
+                }}
+                whileInView ={{
+                    opacity: 1,
+                    filter: "blur(0px)"
+                }}
+                transition={{
+                    duration: 0.6,
+                    ease: "easeIn"
+                }}
+                viewport={{ once: true }}
+            >
+                <Image
+                    src="/footer.png"
+                    alt=""
+                    width={1920}
+                    height={120}
+                    priority
+                    className="w-full object-cover"
+                />
+            </motion.div>
         </div>
     )
 }

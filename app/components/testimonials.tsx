@@ -1,5 +1,7 @@
+"use client"
 import Image from "next/image"
 import user from "@/public/users/user.png"
+import { motion } from "framer-motion"
 
 const testimonials = [
     {
@@ -36,7 +38,25 @@ const testimonials = [
 
 const Test = () => {
     return (
-        <div className={`w-full h-[354px] flex animate-marquee`}>
+        <motion.div
+            initial={{
+                opacity: 0,
+                filter: "blur(10px)",
+                y: 20
+            }}
+            whileInView={{
+                opacity: 1,
+                filter: "blur(0px)",
+                y: 0
+            }}
+            transition={{
+                duration: 0.6,
+                ease: "easeIn"
+            }}
+            viewport={{
+                once: true
+            }}
+            className={`w-full h-[354px] flex animate-marquee`}>
             {
                 testimonials.map((e, i) => (
                     <div key={i} className={`w-[440px] h-[354px] p-[20px] border border-dashed border-[#e6e6e6]`}>
@@ -98,7 +118,7 @@ const Test = () => {
                     </div>
                 ))
             }
-        </div>
+        </motion.div>
     )
 }
 

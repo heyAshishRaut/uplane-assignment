@@ -1,6 +1,8 @@
+"use client"
 import {cn} from "@/lib/utils"
 import {PrimaryButton, SecondaryButton} from "@/app/components/ui/button"
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 const builtByExperts = [
     {
@@ -88,7 +90,22 @@ const builtByExperts = [
 ]
 const HeroSection = () => {
     return (
-        <div className={cn("h-[750px] pr-0 lg:pr-[40px] w-full flex lg:justify-between")}>
+        <motion.div
+            initial={{
+                opacity: 0,
+                filter: "blur(10px)",
+                y: 20
+            }}
+            animate={{
+                opacity: 1,
+                filter: "blur(0px)",
+                y: 0
+            }}
+            transition={{
+                duration: 0.4,
+                ease: "easeIn"
+            }}
+            className={cn("h-[750px] pr-0 lg:pr-[40px] w-full flex lg:justify-between")}>
             {/* Text */}
             <div className={cn("lg:pl-[100px] px-[20px] md:px-0 w-full max-w-[700px] flex flex-col justify-center gap-y-[20px] md:gap-y-[100px]")}>
                 <div className={cn(" md:w-[573px] flex flex-col gap-y-[40px] leading-[1.1] h-[407px]")}>
@@ -151,7 +168,7 @@ const HeroSection = () => {
                     className="object-contain"
                 />
             </div>
-        </div>
+        </motion.div>
     )
 }
 
