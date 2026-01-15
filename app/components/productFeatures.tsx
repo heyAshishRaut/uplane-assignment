@@ -137,7 +137,7 @@ const ProductFeatures = () => {
                     viewport={{
                         once: true
                     }}
-                    className={`w-full h-[477px] p-[1px]  border border-dashed border-[#e6e6e6]`}>
+                    className={`w-full h-[477px] p-[1px] bg-white border border-dashed border-[#e6e6e6]`}>
                     <div className={`h-full w-full bg-[#f0f0f0] flex`}>
                         <div className={`w-full md:w-1/2 h-full p-[30px] md:p-[60px] flex flex-col gap-y-[40px] items-center justify-center`}>
                             <div className={`flex flex-col gap-y-[14px] leading-[1.2] tracking-tight`}>
