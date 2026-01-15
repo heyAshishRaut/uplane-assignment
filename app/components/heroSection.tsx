@@ -3,6 +3,7 @@ import {cn} from "@/lib/utils"
 import {PrimaryButton, SecondaryButton} from "@/app/components/ui/button"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import AnimateText from "@/app/components/animateText";
 
 const builtByExperts = [
     {
@@ -128,7 +129,7 @@ const HeroSection = () => {
                         </div>
                     </div>
 
-                    <div className={cn("text-center md:text-start text-[36px] lg:text-[56px] font-inter font-semibold tracking-tighter")}>Next-gen Performance Marketing for your company</div>
+                    <div className={cn("text-center md:text-start text-[36px] lg:text-[56px] font-inter font-semibold tracking-tighter")}><AnimateText text={"Next-gen Performance Marketing for your company"}/></div>
                     <div className={cn("text-center md:text-start text-[#3d3d3d] font-medium")}>Uplane offers automated ad creation and campaign management that  keeps improving itself intelligently.</div>
                     <div className={cn("w-full flex justify-center md:justify-start gap-x-[10px]")}>
                         <PrimaryButton text={"Talk to Founders"}/>
