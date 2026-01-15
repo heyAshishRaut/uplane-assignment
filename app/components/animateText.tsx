@@ -23,7 +23,7 @@ const AnimateText = ({ text }: { text: string }) => {
     }, [])
 
     return (
-        <div ref={scope} className={`text-center`}>
+        <div ref={scope} className={`text-center md:text-start leading-[1.2] tracking-tighter`}>
             {
                 text.split(" ").map((word, idx) => (
                     <motion.span key={idx}
