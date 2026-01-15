@@ -1,6 +1,6 @@
 import {cn} from "@/lib/utils"
 import Image from "next/image"
-import uplanelogo from "@/public/uplaneLogo.png"
+import logonew from "@/public/logonew.png"
 import {PrimaryButton, SecondaryButton} from "@/app/components/ui/button"
 import HamburgerButton from "@/app/components/ui/hamburgerButton";
 
@@ -36,7 +36,7 @@ const Navbar = () => {
         <div className={`w-full `}>
             <div className={cn("w-full px-[20px] md:px-[50px] lg:px-[100px] h-[89px] flex items-center justify-between py-[20px] border-b border-[#e6e6e6]")}>
                 <div className={`flex gap-x-[30px] items-center`}>
-                    <Image src={uplanelogo} alt={" "} />
+                    <Image src={logonew} height={30} width={123} alt={" "} />
                     <div className={cn("hidden lg:flex items-center text-black font-sans text-[16px]")}>
                         {
                             lists.map((e, i) => (
