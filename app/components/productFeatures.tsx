@@ -151,7 +151,7 @@ const ProductFeatures = () => {
                                         src="/s1.png"
                                         alt=""
                                         fill
-                                        className="object-contain object-center mt-0.5 scale-150 md:scale-180"
+                                        className="object-contain object-center mt-0.5 scale-120 md:scale-180"
                                     />
                                 </div>
                                 <div className="relative w-1/3 md:w-[160px] h-full bg-white shadow-[0_6px_16px_rgba(0,0,0,0.08)] rounded-lg">
@@ -159,7 +159,7 @@ const ProductFeatures = () => {
                                         src="/s2.png"
                                         alt=""
                                         fill
-                                        className="object-contain object-center mt-0.5 scale-150 md:scale-180"
+                                        className="object-contain object-center mt-0.5 scale-120 md:scale-180"
                                     />
                                 </div>
                                 <div className="relative w-1/3 md:w-[160px] h-full bg-white shadow-[0_6px_16px_rgba(0,0,0,0.08)] rounded-lg">
@@ -167,7 +167,7 @@ const ProductFeatures = () => {
                                         src="/s1.png"
                                         alt=""
                                         fill
-                                        className="object-contain object-center mt-0.5 scale-150 md:scale-180"
+                                        className="object-contain object-center mt-0.5 scale-120 md:scale-180"
                                     />
                                 </div>
                             </div>
