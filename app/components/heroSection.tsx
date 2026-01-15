@@ -109,7 +109,7 @@ const HeroSection = () => {
             className={cn("h-[750px] pr-0 lg:pr-[40px] w-full flex lg:justify-between")}>
             {/* Text */}
             <div className={cn("lg:pl-[100px] px-[20px] md:px-0 w-full max-w-[700px] flex flex-col justify-center gap-y-[20px] md:gap-y-[100px]")}>
-                <div className={cn(" md:w-[573px] flex flex-col gap-y-[40px] leading-[1.1] h-[407px]")}>
+                <div className={cn(" md:w-[573px] flex flex-col gap-y-[40px] leading-[1.3] h-[407px]")}>
                     {/* Y Combinator */}
                     <div className={`self-center lg:self-start px-[14px] py-[6px] flex items-center text-[15px] gap-x-[10px] rounded-full bg-white shadow-[0_8px_24px_rgba(0,0,0,0.12)]`}>
                         <div>Backed by</div>
@@ -129,7 +129,7 @@ const HeroSection = () => {
                         </div>
                     </div>
 
-                    <div className={cn("text-center md:text-start text-[36px] lg:text-[56px] font-inter font-semibold tracking-tighter")}><AnimateText text={"Next-gen Performance Marketing for your company"}/></div>
+                    <div className={cn("text-center md:text-start text-[36px] lg:text-[56px] font-inter font-semibold tracking-tight")}><AnimateText text={"Next-gen Performance Marketing for your company"}/></div>
                     <div className={cn("text-center md:text-start text-[#3d3d3d] font-medium")}>Uplane offers automated ad creation and campaign management that  keeps improving itself intelligently.</div>
                     <div className={cn("w-full flex justify-center md:justify-start gap-x-[10px]")}>
                         <PrimaryButton text={"Talk to Founders"}/>

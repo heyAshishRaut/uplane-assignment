@@ -24,9 +24,9 @@ const ProductFeatures = () => {
                 viewport={{
                     once: true
                 }}
-                className={`h-[228px] w-full flex flex-col items-center gap-y-[14px] leading-[1.1] tracking-tight text-[16px]`}>
+                className={`h-[228px] w-full flex flex-col items-center gap-y-[14px] leading-[1.3] text-[16px]`}>
                 <div className={"text-[#2476FF]"}>Product Features</div>
-                <div className={`font-inter text-[36px] md:text-[52px] font-semibold text-center`}>All-in-One AI<br/>Marketing Platform</div>
+                <div className={`font-inter text-[36px] md:text-[52px] font-semibold text-center tracking-tight`}>All-in-One AI<br/>Marketing Platform</div>
                 <div className={`text-center text-[#52555B]`}>From research to reporting Uplane automates your entire performance marketing workflow,<br/> so you can move faster, create smarter, and scale effortlessly.</div>
             </motion.div>
 
@@ -75,7 +75,7 @@ const ProductFeatures = () => {
                     viewport={{
                         once: true
                     }}
-                    className={`self-center flex-1 flex flex-col gap-y-[20px] md:flex-row md:gap-y-0 md:gap-x-[20px]`}>
+                    className={`leading-[1.3] self-center flex-1 flex flex-col gap-y-[20px] md:flex-row md:gap-y-0 md:gap-x-[20px]`}>
                     <div className={`w-full md:w-1/2 p-[1px] bg-white border border-dashed border-[#e6e6e6]`}>
                         <div className={`h-full w-full bg-[#f0f0f0] flex flex-col p-1.5 md:p-2`}>
                             <div className="relative w-full h-[267px] lg:h-[378px] bg-white rounded-2xl shadow-[0_6px_16px_rgba(0,0,0,0.08)]">
@@ -140,9 +140,9 @@ const ProductFeatures = () => {
                     className={`w-full h-[477px] p-[1px] bg-white border border-dashed border-[#e6e6e6]`}>
                     <div className={`h-full w-full bg-[#f0f0f0] flex`}>
                         <div className={`w-full md:w-1/2 h-full p-[30px] md:p-[60px] flex flex-col gap-y-[40px] items-center justify-center`}>
-                            <div className={`flex flex-col gap-y-[14px] leading-[1.2] tracking-tight`}>
+                            <div className={`flex flex-col gap-y-[14px] leading-[1.3]`}>
                                 <div className={`text-[16px] text-[#2476FF]`}>Chat Interface</div>
-                                <div className={`font-inter md:font-semibold text-[36px] font-semibold md:text-[48px]`}>Bring Your Marketing Everywhere</div>
+                                <div className={`font-inter md:font-semibold tracking-tight text-[36px] font-semibold md:text-[48px]`}>Bring Your Marketing Everywhere</div>
                                 <div className={`font-sans text-[16px] text-[#52555B]`}>Uplane is available everywhere, take control, drop ideas, ask for insights 24/7</div>
                             </div>
                             <div className={`h-[52px] w-full flex justify-center gap-x-[10px]`}>

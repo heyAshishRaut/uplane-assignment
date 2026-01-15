@@ -59,7 +59,7 @@ const Test = () => {
             className={`w-full h-[354px] flex animate-marquee`}>
             {
                 testimonials.map((e, i) => (
-                    <div key={i} className={`w-[440px] h-[354px] p-[20px] border border-dashed border-[#e6e6e6]`}>
+                    <div key={i} className={`leading-[1.3] w-[440px] h-[354px] p-[20px] border border-dashed border-[#e6e6e6]`}>
                         <div className={`w-[400px] h-full bg-white rounded-3xl shadow-[0_6px_16px_rgba(0,0,0,0.08)] flex flex-col`}>
                             <div className={`w-full h-[225px] flex flex-col gap-y-[20px] border-b border-[#e6e6e6] p-[30px]`}>
                                 <div className={`flex gap-x-1`}>
